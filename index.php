@@ -46,6 +46,8 @@ echo "\n\n";
 $simpleXML = new SimpleXMLElement($inputXMLwithOneElement);
 echo json_encode($simpleXML, JSON_PRETTY_PRINT);
 
+echo "See, if I have only one product in the list, it isn't in array any more. I want these bruckets []"
+
 echo "The Fix!";
 
 class XML2JsonSearchResult extends SimpleXMLElement implements JsonSerializable
@@ -55,11 +57,6 @@ class XML2JsonSearchResult extends SimpleXMLElement implements JsonSerializable
 //    var_dump($this); echo "+++ ";
     $name = $this->getName();
     $value = (array)$this;
-        foreach ($this as $v)
-        {
-//           var_dump($v);
-
-        }
         if (count($value) == 1)
             return [$value];
         return $value;    

@@ -10,14 +10,14 @@ gulp.task('test', function(){
             .on('error', notify.onError({
                 title: 'WTF???',
                 message: 'The phpspec tests failed',
-                icon: __dirname + '/asset/fail.png'
+                icon: __dirname + '/node_modules/gulp-phpspec/assets/test-fail.png'
                 //sound: true,
                 //time: 2000
             }))
             .pipe(notify({
                 title: 'All done!',
                 message: 'The phpspec tests passed',
-                icon: __dirname + '/asset/success.png'
+                icon: __dirname + '/node_modules/gulp-phpspec/assets/test-pass.png'
                 //sound: true,
                 //time: 2000
             }));

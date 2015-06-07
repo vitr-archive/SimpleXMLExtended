@@ -46,7 +46,7 @@ echo "\n\n";
 $simpleXML = new SimpleXMLElement($inputXMLwithOneElement);
 echo json_encode($simpleXML, JSON_PRETTY_PRINT);
 
-echo "See, if I have only one product in the list, it isn't in array any more. I want these bruckets []"
+echo "See, if I have only one product in the list, it isn't in array any more. I want these bruckets []";
 
 echo "The Fix!";
 

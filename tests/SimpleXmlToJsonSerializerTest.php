@@ -41,8 +41,8 @@ STRING;
      */
     public function testStandardJsonSerializerReturnsArrayOfProductsForMultipleProducts()
     {
-        $SimpleXMLfixed = new SimpleXmlElement(self::$inputXml);
-        $result = json_decode(json_encode($SimpleXMLfixed), true);
+        $SimpleXML = new SimpleXmlElement(self::$inputXml);
+        $result = json_decode(json_encode($SimpleXML), true);
         $this->assertArrayHasKey(0, $result['productlist']['product']);
         $this->assertArrayNotHasKey('id', $result['productlist']['product']);
     }
@@ -53,8 +53,8 @@ STRING;
      */
     public function testStandardJsonSerializerDoesNotReturnArrayForSingleProduct()
     {
-        $SimpleXMLfixed = new SimpleXmlElement(self::$inputXmlWithOneElement);
-        $result = json_decode(json_encode($SimpleXMLfixed), true);
+        $SimpleXML = new SimpleXmlElement(self::$inputXmlWithOneElement);
+        $result = json_decode(json_encode($SimpleXML), true);
         $this->assertArrayNotHasKey(0, $result['productlist']['product']);
         $this->assertArrayHasKey('id', $result['productlist']['product']);
     }

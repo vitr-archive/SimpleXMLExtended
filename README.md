@@ -1,9 +1,9 @@
-# php_json_serializer
-php json serializer example
+# SimpleXml To Json Serializer
+Better JSON serializer for php
 
-Return an array in json_encode result for only one nested element in SimpleXML object
+Returns an array in json_encode result for only one nested element in SimpleXML object
 
 inspired by http://stackoverflow.com/questions/16935560/php-convert-xml-to-json-group-when-there-is-one-child
 
 run code
-https://eval.in/376018
+https://eval.in/377459

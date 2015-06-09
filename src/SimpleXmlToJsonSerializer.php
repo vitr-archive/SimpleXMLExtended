@@ -14,6 +14,7 @@ class SimpleXmlToJsonSerializer extends SimpleXMLElement implements JsonSerializ
     public function jsonSerialize()
     {
         $value = (array)$this;
+        //if (count($value) == 1 and gettype(reset($value)) != 'array')
         if (count($value) == 1)
             return [key($value) => [(array)reset($value)]];
         return $value;

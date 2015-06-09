@@ -8,4 +8,4 @@ inspired by http://stackoverflow.com/questions/16935560/php-convert-xml-to-json-
 https://hakre.wordpress.com/2013/07/10/simplexml-and-json-encode-in-php-part-iii-and-end/
 
 run code
-https://eval.in/377459
+https://eval.in/378064

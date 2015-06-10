@@ -1,3 +1,5 @@
+SimpleXml To Json Force Array
+
 # SimpleXml To Json Serializer
 Better JSON serializer for php
 

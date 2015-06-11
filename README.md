@@ -11,3 +11,11 @@ https://hakre.wordpress.com/2013/07/10/simplexml-and-json-encode-in-php-part-iii
 
 run code
 https://eval.in/378064
+
+php can't have object properties with same name, therefore is uses arrays for xml like this
+<list>
+  <node>item1</node>
+  <node>item2</node>
+  ...
+  <node>item9</node>
+</list>  

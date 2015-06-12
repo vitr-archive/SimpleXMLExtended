@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vitr/SimpleXmlToJsonSerializer.svg?branch=master)](https://travis-ci.org/vitr/SimpleXmlToJsonSerializer)
+
 SimpleXml To Json Force Array
 
 # SimpleXml To Json Serializer

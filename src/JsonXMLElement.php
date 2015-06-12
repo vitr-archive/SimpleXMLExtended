@@ -8,6 +8,7 @@
  * as it had been done before. With those exact same characteristics.
  *
  */
+
 class JsonXMLElement extends SimpleXMLElement implements JsonSerializable
 {
     /**

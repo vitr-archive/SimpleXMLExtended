@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/vitr/SimpleXmlToJsonSerializer.svg?branch=master)](https://travis-ci.org/vitr/SimpleXmlToJsonSerializer)
 
-SimpleXml To Json Force Array
+SimpleXml To Json Force Array / consider SimpleXMLExtended as it wil have another method to handle CDATA
 
 # SimpleXml To Json Serializer
 Better JSON serializer for php

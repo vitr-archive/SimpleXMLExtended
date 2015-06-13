@@ -21,3 +21,5 @@ php can't have object properties with same name, therefore is uses arrays for xm
   ...
   <node>item9</node>
 </list>  
+
+testing tools: phpunit & phpspec

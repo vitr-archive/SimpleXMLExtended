@@ -28,11 +28,46 @@ class SimpleXmlToJsonSerializerSpec extends ObjectBehavior
 </productlist>
 </result>
 STRING;
+
+    private  $inputXmlWithAttributes = <<<STRING
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+<status>ok</status>
+<productlist count="3">
+    <product>
+        <id>1</id>
+        <name>Prod1</name>
+    </product>
+    <product>
+        <id>2</id>
+        <name>Prod1</name>
+    </product>
+    <product>
+        <id>3</id>
+        <name>Prod1</name>
+    </product>
+</productlist>
+</result>
+STRING;
+
     private  $inputXmlWithOneElement = <<<STRING
 <?xml version="1.0" encoding="UTF-8"?>
 <result>
 <status>ok</status>
 <productlist>
+    <product>
+        <id>1</id>
+        <name>Prod1</name>
+    </product>
+</productlist>
+</result>
+STRING;
+
+    private  $inputXmlWithOneElementWithAttributes = <<<STRING
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+<status>ok</status>
+<productlist count="1">
     <product>
         <id>1</id>
         <name>Prod1</name>

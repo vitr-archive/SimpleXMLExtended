@@ -1,6 +1,6 @@
 TODO: care for @attributes, so the array could have 2 elements, but only one is real
 
-[![Build Status](https://travis-ci.org/vitr/SimpleXmlToJsonSerializer.svg?branch=master)](https://travis-ci.org/vitr/SimpleXmlToJsonSerializer)
+[![Build Status](https://travis-ci.org/vitr/SimpleXMLExtended.svg?branch=master)](https://travis-ci.org/vitr/SimpleXMLExtended)
 
 SimpleXml To Json Force Array / consider SimpleXMLExtended as it wil have another method to handle CDATA
 

@@ -4,7 +4,7 @@ TODO: care for @attributes, so the array could have 2 elements, but only one is 
 
 SimpleXml To Json Force Array / consider SimpleXMLExtended as it wil have another method to handle CDATA
 
-# SimpleXml To Json Serializer
+# SimpleXMLExtended
 Better JSON serializer for php
 
 Returns an array in json_encode result for only one nested element in SimpleXML object

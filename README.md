@@ -35,5 +35,5 @@ testing tools: phpunit & phpspec
 --- addition
 https://eval.in/385372  
 http://stackoverflow.com/questions/30974496/php-xml-to-json-format-changes-when-number-of-children-is-just-one/30975567?noredirect=1#comment49989691_30975567  
-add more test cases for haveliy used attributes cases
+add more test cases for heavily used attributes cases
 

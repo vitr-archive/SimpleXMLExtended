@@ -2,11 +2,11 @@ TODO: rename and split SimpleXMLExtended.php (it actually does 2 things - cdata 
 TODO: add tests for @attributes
 TODO: care for @attributes, so the array could have 2 elements, but only one is real
 
-[![Build Status](https://travis-ci.org/vitr/SimpleXmlToJsonSerializer.svg?branch=master)](https://travis-ci.org/vitr/SimpleXmlToJsonSerializer)
+[![Build Status](https://travis-ci.org/vitr/SimpleXMLExtended.svg?branch=master)](https://travis-ci.org/vitr/SimpleXMLExtended)
 
 SimpleXml To Json Force Array / consider SimpleXMLExtended as it wil have another method to handle CDATA
 
-# SimpleXml To Json Serializer
+# SimpleXMLExtended
 Better JSON serializer for php
 
 Returns an array in json_encode result for only one nested element in SimpleXML object
@@ -31,3 +31,9 @@ php can't have object properties with same name, therefore is uses arrays for xm
 </list>  
 
 testing tools: phpunit & phpspec
+
+--- addition
+https://eval.in/385372  
+http://stackoverflow.com/questions/30974496/php-xml-to-json-format-changes-when-number-of-children-is-just-one/30975567?noredirect=1#comment49989691_30975567  
+add more test cases for haveliy used attributes cases
+

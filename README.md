@@ -30,7 +30,7 @@ php can't have object properties with same name, therefore is uses arrays for xm
   <node>item9</node>
 </list>  
 
-testing tools: phpunit & phpspec
+testing tools: phpunit & phpspec, do we really need  phpspec here? maybe add phpspec just for the usage example
 
 --- addition
 https://eval.in/385372  

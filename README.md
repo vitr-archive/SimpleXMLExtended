@@ -1,3 +1,10 @@
+Naming  
+Original php name: SimpleXmlElement  
+Preserving array name: SimpleXmlElementPreserveArrays  
+Adding CData blocks: SimpleXmlElementCDataAvailable 
+Two above combined: SimpleXmlElementExtended
+
+
 TODO: rename and split SimpleXMLExtended.php (it actually does 2 things - cdata and arrays
 TODO: add tests for @attributes
 TODO: care for @attributes, so the array could have 2 elements, but only one is real

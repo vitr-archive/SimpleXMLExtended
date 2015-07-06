@@ -42,5 +42,9 @@ testing tools: phpunit & phpspec, do we really need  phpspec here? maybe add php
 --- addition
 https://eval.in/385372  
 http://stackoverflow.com/questions/30974496/php-xml-to-json-format-changes-when-number-of-children-is-just-one/30975567?noredirect=1#comment49989691_30975567  
-add more test cases for heavily used attributes cases
+add more test cases for heavily used attributes cases   
+
+--- notes
+thsi is how you can exclude docs from the packages, what about tests?
+https://github.com/composer/composer/issues/1750
 

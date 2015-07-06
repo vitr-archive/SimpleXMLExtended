@@ -1,7 +1,7 @@
 Naming  
 Original php name: SimpleXmlElement  
 Preserving array name: SimpleXmlElementPreserveArrays  
-Adding CData blocks: SimpleXmlElementCDataAvailable 
+Adding CData blocks: SimpleXmlElementCDataAvailable   
 Two above combined: SimpleXmlElementExtended
 
 

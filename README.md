@@ -5,10 +5,10 @@ Adding CData blocks: SimpleXmlElementCDataAvailable
 Two above combined: SimpleXmlElementExtended
 
 
-TODO: rename and split SimpleXMLExtended.php (it actually does 2 things - cdata and arrays
-TODO: add tests for @attributes
-TODO: care for @attributes, so the array could have 2 elements, but only one is real
-TODO: packaging, exclude test&docs, some ideas https://github.com/silverstripe/silverstripe-framework/pull/4312
+TODO: rename and split SimpleXMLExtended.php (it actually does 2 things - cdata and arrays   
+TODO: add tests for @attributes   
+TODO: care for @attributes, so the array could have 2 elements, but only one is real  
+TODO: packaging, exclude test&docs, some ideas https://github.com/silverstripe/silverstripe-framework/pull/4312  
 
 [![Build Status](https://travis-ci.org/vitr/SimpleXMLExtended.svg?branch=master)](https://travis-ci.org/vitr/SimpleXMLExtended)
 

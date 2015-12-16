@@ -1,4 +1,7 @@
-<?php namespace App;
+<?php
+
+namespace App;
+
 /*
  * Keeps the array structure for simpleXML nodes with only one child
  * during json encoding
@@ -13,16 +16,18 @@ class SimpleXMLExtended extends \SimpleXMLElement implements \JsonSerializable
 {
     public function jsonSerialize()
     {
-        $value = (array)$this;
+        $value = (array) $this;
         ///// fix for @attributes
         $next = next($value);
         if (isset($value['@attributes']) && gettype($next) == 'object') {
-            $value[key($value)] = array($value[key($value)]);
+            $value[key($value)] = [$value[key($value)]];
         }
         reset($value);
         /////////
-        if (count($value) == 1 and gettype(reset($value)) != 'array')
-            return [key($value) => [(array)reset($value)]];
+        if (count($value) == 1 and gettype(reset($value)) != 'array') {
+            return [key($value) => [(array) reset($value)]];
+        }
+
         return $value;
     }
 
@@ -36,10 +41,11 @@ class SimpleXMLExtended extends \SimpleXMLElement implements \JsonSerializable
      $xml->title->addAttribute('lang', 'en');
      $xml->saveXML($xmlFile);
      */
+
     public function addCData($cdata_text)
     {
-      $node = dom_import_simplexml($this);
-      $no   = $node->ownerDocument;
-      $node->appendChild($no->createCDATASection($cdata_text));
+        $node = dom_import_simplexml($this);
+        $no = $node->ownerDocument;
+        $node->appendChild($no->createCDATASection($cdata_text));
     }
 }

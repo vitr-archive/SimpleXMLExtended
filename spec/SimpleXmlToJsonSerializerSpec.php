@@ -3,12 +3,11 @@
 namespace spec;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 
 class SimpleXmlToJsonSerializerSpec extends ObjectBehavior
 {
     // XML input samples
-    private  $inputXml = <<<STRING
+    private $inputXml = <<<STRING
 <?xml version="1.0" encoding="UTF-8"?>
 <result>
 <status>ok</status>
@@ -29,7 +28,7 @@ class SimpleXmlToJsonSerializerSpec extends ObjectBehavior
 </result>
 STRING;
 
-    private  $inputXmlWithAttributes = <<<STRING
+    private $inputXmlWithAttributes = <<<STRING
 <?xml version="1.0" encoding="UTF-8"?>
 <result>
 <status>ok</status>
@@ -50,7 +49,7 @@ STRING;
 </result>
 STRING;
 
-    private  $inputXmlWithOneElement = <<<STRING
+    private $inputXmlWithOneElement = <<<STRING
 <?xml version="1.0" encoding="UTF-8"?>
 <result>
 <status>ok</status>
@@ -63,7 +62,7 @@ STRING;
 </result>
 STRING;
 
-    private  $inputXmlWithOneElementWithAttributes = <<<STRING
+    private $inputXmlWithOneElementWithAttributes = <<<STRING
 <?xml version="1.0" encoding="UTF-8"?>
 <result>
 <status>ok</status>
@@ -76,19 +75,18 @@ STRING;
 </result>
 STRING;
 
-
-    function it_is_initializable()
+    public function it_is_initializable()
     {
         $this->shouldHaveType('SimpleXmlToJsonSerializer');
     }
 
-    function it_creates_SimpleXMLElement()
+    public function it_creates_SimpleXMLElement()
     {
         $this->beConstructedWith($this->inputXmlWithOneElement);
         $this->shouldBeAnInstanceOf('SimpleXMLElement');
     }
 
-    function it_converts_SimpleXML_object_to_array()
+    public function it_converts_SimpleXML_object_to_array()
     {
         $this->beConstructedWith($this->inputXmlWithOneElement);
 //        echo json_encode($this->getWrappedObject(), JSON_PRETTY_PRINT);
@@ -98,8 +96,7 @@ STRING;
 //        $this->nativeJsonSerializer($simpleXML)->shouldBeArray();
     }
 
-
-    function it_should_have_some_specific_options_by_default()
+    public function it_should_have_some_specific_options_by_default()
     {
         $this->beConstructedWith($this->inputXmlWithOneElement);
         $this->getWrappedObject()->shouldHaveKey('username');
@@ -117,7 +114,6 @@ STRING;
             },
         ];
     }
-
 
 /*
         function it_converts_productlist_to_array()
@@ -142,5 +138,4 @@ STRING;
             $this->nativeJsonSerializer($simpleXML)['productlist']['product']->shouldHaveKey(0);
         }
     */
-
 }
